@@ -33,13 +33,12 @@ body {
   bottom: 0;
 }
 .top-wrap{
-  max-width: 1400px;
   margin: 0 auto;
 }
 
 .top-wrap__top{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   background-color: rgba(57, 54, 54, 0.96);
   align-items: center;
   width: 100%;
@@ -58,7 +57,8 @@ body {
   border-radius: 7.5px;
   width: 180px;
   text-align: center;
-  padding: 5px 0;
+  height: 40px;
+  padding-top: 5px;
 }
 
 .top-wrap__top__btn a{
@@ -80,12 +80,12 @@ body {
   position: absolute;
   z-index: 1;
   top: 15%;
-  left: 10%;
-  font-size: 1.5rem;
+  left: 15%;
+  font-size: 1.8rem;
   color: #fff;
 }
 .top-wrap__content__mes span{
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: bold;
 }
 
@@ -93,14 +93,14 @@ body {
   position: absolute;
   z-index: 1;
   top: 35%;
-  right: 15%;
+  right: 18%;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   line-height: 3.5rem;
 }
 
 .top-wrap__content__txt span{
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: bold;
   color: #F9EF08;
 }
@@ -156,6 +156,7 @@ body {
   justify-content: space-between;
   margin: 5% 8%;
   position: relative;
+  z-index: -1;
 }
 
 .pro-wrap__con__img img{
@@ -220,7 +221,7 @@ body {
 .point-top-wrap{
   text-align: center;
   padding-top: 3%;
-  margin: 0 8%;
+  margin: 0 18%;
 }
 
 
@@ -236,7 +237,7 @@ body {
 
 .point-top-wrap__txt{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0 auto;
   margin: 45px 0;
 }
@@ -279,7 +280,7 @@ body {
 .point-con-wrap__item{
   display: flex;
   align-items: center;
-  height: 250px;
+  height: 450px;
 }
 
 .point-con-wrap__item p h4{
@@ -300,7 +301,8 @@ body {
 }
 
 .__txt p{
-  width: 60%;
+  width: 80%;
+  font-size: 1.2rem;;
 }
 
 .logo{
@@ -323,22 +325,23 @@ body {
   align-items: center;
   color: #fff;
   background-color: #57C2B9;
-  width: 140px;
-  height: 140px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   text-decoration: unset;
   position: absolute;
-  top: 20%;
+  top: 23%;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .point1-txt__sub h4{
   border-top: #57C2B9 2px dotted;
   border-bottom: #57C2B9 2px dotted;
   padding:10px 30px ;
+  font-size: 1.3rem;
 }
 
 
@@ -366,43 +369,45 @@ body {
 }
 
 .point2 p{
-  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   color: #000;
   background-color: #fff;
-  width: 140px;
-  height: 140px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   text-decoration: unset;
   position: absolute;
   z-index: 2;
-  top: 20%;
+  top: 23%;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .point2-txt{
   background-color: #57C2B9;
-  height: 250px;
+  height: 80%;
+  padding-top: 5.7%;
 }
 
 .point2-txt p{
-  margin-left: 200px;
+  margin-left: 100px;
 }
 
 .point2-txt__sub{
-  margin-top: 20px;
-  margin-left: 200px;
+  margin: 30px 0;
+  margin-left: 100px;
 }
 
 .point2-txt__sub h4{
   border-top: #fff 2px dotted;
   border-bottom: #fff 2px dotted;
   padding:10px 30px ;
+  font-size: 1.3rem;
 }
 
 .point3{
@@ -418,7 +423,7 @@ body {
   margin-left: 150px;
 }
 
-.point3-txt__sub{
+.point1-txt__sub,.point3-txt__sub{
   margin-bottom: 30px;
 }
 
@@ -426,6 +431,7 @@ body {
   border-top: #57C2B9 2px dotted;
   border-bottom: #57C2B9 2px dotted;
   padding:10px 30px ;
+  font-size: 1.3rem;
 }
 
 /* fee-exのスタイル */
@@ -434,13 +440,17 @@ body {
   z-index: -1;
 }
 
+.fee-wrap__con{
+  margin: 40px 0;
+}
+
 .fee-wrap__con p{
   font-size: 1.3rem;
 }
 
 .fee-wrap__table{
   max-width: 740px;
-  margin:5% 20% 2% 20%;
+  margin:0 auto ;
 }
 
 .fee-wrap__table__ttl{
@@ -508,14 +518,23 @@ body {
 }
 
 /*resultのスタイル*/
+
+.res-wrap{
+margin-bottom: 40px;
+}
+
 .res-wrap__con{
   max-width: 750px;
-  margin:5% 20% 2% 20%;
+  margin: 0 auto;
   text-align: center;
 }
 
 .res-wrap__con p{
   font-size: 1.3rem;
+}
+
+.res-wrap__con__table{
+  margin: 40px 0;
 }
 
 .res-wrap__con__table__item{
@@ -556,6 +575,7 @@ body {
 }
 .contact-form__txt{
   margin: 40px 0 10px;
+  text-align: center;
 }
 
 .res-wrap__content__btn{
@@ -587,13 +607,17 @@ body {
 
 .q-wrap__con__block__top p {
   color: #fff;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
 }
 .q-wrap__con__block__bottom {
   display: flex;
   align-items: center;
   background-color: #F2F0F0;
   padding: 2.5%;
+}
+
+.q-wrap__con__block__bottom p{
+  font-size: 1.4rem;
 }
 
 .q-wrap__con__block__bottom span {
