@@ -109,7 +109,8 @@ body {
   position: absolute;
   z-index: 1;
   bottom: 5%;
-  right: 35%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .top-wrap__content__btn{
